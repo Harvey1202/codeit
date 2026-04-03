@@ -4,4 +4,5 @@
 import os
 
 location_init_file = os.path.dirname(os.path.realpath(__file__))
-PROJECT_FOLDER_PATH = location_init_file.split("codeit")[0]
+# Go up one level from codeit/ package dir to reach the project root
+PROJECT_FOLDER_PATH = os.path.dirname(location_init_file) + os.sep
